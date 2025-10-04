@@ -31,3 +31,20 @@ const mgr1 = new Manager("Charlie Smith", "Constuction", 8)
 const mgr2 = new Manager("Jack Delta", "Transportation", 3)
 
 //Step 5
+class Company {
+  constructor() {
+    this.employees = [];
+  }
+
+  addEmployee(employee) {
+    this.employees.push(employee);
+  }
+
+  listEmployees() {
+    this.employees.forEach(emp => {
+      console.log(emp.describe());
+    });
+  }
+}
+
+// Step 6
