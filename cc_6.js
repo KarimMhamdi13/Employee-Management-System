@@ -13,3 +13,21 @@ class Employee {
 }
 
 // Step 3
+class Manager extends Employee {
+  constructor(name, department, teamSize) {
+    super(name, department);
+    this.teamSize = teamSize;
+  }
+
+  describe() {
+    return `${this.name} manages a team of ${this.teamSize} in ${this.department}`;
+  }
+}
+
+// Step 4
+const emp1 = new Employee("Alice Moran", "Financing")
+const emp2 = new Employee("Billy Bob", "Construction")
+const mgr1 = new Manager("Charlie Smith", "Constuction", 8)
+const mgr2 = new Manager("Jack Delta", "Transportation", 3)
+
+//Step 5
